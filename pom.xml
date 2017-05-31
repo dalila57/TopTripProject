@@ -3,7 +3,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.formation</groupId>
-	<artifactId>TipTopTravel</artifactId>
+	<artifactId>TopTripTravel</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
 	
@@ -12,7 +12,7 @@
 	</properties>
 	
 	<build>
-		<finalName>TipTopTravel</finalName>
+		<finalName>TopTripTravel</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
