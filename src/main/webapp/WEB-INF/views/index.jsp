@@ -78,12 +78,9 @@
     <div class="form-group">
       <label for="sel1">Pays : </label>
       <select class="form-control" id="sel1" onChange="document.location = this.value" value="GO">>
-		<option></option>
-	    <option value="pays.fr.html">France</option>
-        <option value="pays.es.html">Espagne</option>
-		<option>3</option>
-        <option>4</option>
-        <option>5</option>
+		<c:forEach items="${countryList}" var="country"> 
+			<option> ${country.countryName} </option>
+		 </c:forEach>	
       </select>
       <br>
     </div>

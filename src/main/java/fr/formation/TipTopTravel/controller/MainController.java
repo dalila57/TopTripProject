@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import fr.formation.TipTopTravel.dao.CountryRepository;
 import fr.formation.TipTopTravel.model.Menu;
 
 
@@ -26,6 +27,9 @@ public class MainController {
 	@Autowired
 	private MessageSource messageSource;
 	
+	@Autowired
+	private CountryRepository repository; 
+	
 	/**
 	 * @param messageSource the messageSource to set
 	 */
@@ -35,21 +39,11 @@ public class MainController {
 
 	@RequestMapping("/index")
 	public ModelAndView index(){
-		LOGGER.debug("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 		ModelAndView mav = new ModelAndView("index");
-		final String menus = this.getMessage("menu");
-		MainController.LOGGER.debug("Valeur associée à la clé 'menus' : {}", menus);
-		final List<Menu> menuList = new ArrayList<>();
-		if (menus != null && !menus.isEmpty()){
-			for (final String menu: menus.split(",")){
-				final String title = this.getMessage(menu.concat(MainController.KEY_SUFFIX_TITLE));
-				final String url = this.getMessage(menu.concat(MainController.KEY_SUFFIX_URL));
-				menuList.add(new Menu(title,url));
-			}
-		}
-		mav.getModel().put("menuList", menuList);
+		mav.getModel().put("countryList", this.repository.findAll());
 		return mav;
 	}
+	
 	
 	private String getMessage(final String key){
 		return this.messageSource.getMessage(key, null, Locale.getDefault());
