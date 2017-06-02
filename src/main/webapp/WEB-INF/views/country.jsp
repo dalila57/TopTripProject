@@ -22,7 +22,7 @@
 					<td>${country.emergencyNumber}</td>
 				</tr>
 			</c:forEach>
-			<script type="text/javascript">
+			<script tyoe="text/javascript">
 				$("#countryTable").DataTable();
 			</script>
 		</tbody>

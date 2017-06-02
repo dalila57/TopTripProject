@@ -77,10 +77,24 @@
     <div class="form-group">
     <div class="form-group">
       <label for="sel1">Pays : </label>
-      <select class="form-control" id="sel1" onChange="document.location = this.value" value="GO">>
-		<c:forEach items="${countryList}" var="country"> 
-			<option> ${country.countryName} </option>
+      <select class="form-control" id="sel1" onChange="document.location = this.value" value="GO">
+       <option>
+       		
+                	<c:forEach items="${countryList}" var="country">
+              	 		 <a href="#"> ${country.countryName} </a>
+       				</c:forEach>
+       				
+       	</option>
+       		<!--<c:forEach items="${countryList}" var="country"> 
+				<option value="#"> ${country.countryName} </option>
 		 </c:forEach>	
+		 
+		 <c:forEach items= "${menuList}" var="menu">
+                <c:url value="${menu.url}" var="menuUrl" />
+     		</c:forEach>
+		 
+		 -->
+		
       </select>
       <br>
     </div>
