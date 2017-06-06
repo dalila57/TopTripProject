@@ -85,8 +85,8 @@
 									id="sel1" onChange="document.location = this.value" value="GO">
 									<option> Choisissez votre destination...</option>
 										<c:forEach items="${countryList}" var="country">
-										 	<option value="pays/pays.jsp">
-	              	 							<a href="pays/country"> ${country.countryName} </a>
+										 	<option value="pays?countryID=${country.countryID}">
+	              	 							${country.countryName} 
 	              	 						</option>
 										</c:forEach>
 								</select> <br>
