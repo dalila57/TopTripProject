@@ -64,6 +64,7 @@ aside {
 }
 .no-padding {
   padding: 0;
+
 }
 .navbar-default {
   background-color: white;
@@ -216,6 +217,13 @@ header .header-content .header-content-inner p {
 .container {
 	width: 100%;
 	padding: 0px;
+}
+
+.container-fluid {
+	width: 100%;
+	padding-right: 0px;
+    padding-left: 0px;
+	
 }
 
 .section-heading {
@@ -423,6 +431,20 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.col-lg-3 {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.col-sm-3 {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+valise h4 {
+	text-align: center;
 }
 
 footer {

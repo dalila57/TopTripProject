@@ -44,7 +44,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="index.html">Top Trip</a>
-				<!-- <a class="navbar-brand page-scroll" href="index.html">Top Trip</a> si dossier différent (pays pas dans la racine)-->
+				<!-- <a class="navbar-brand page-scroll" href="../index.html">Top Trip</a> si dossier différent (pays pas dans la racine)-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,15 +75,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/portfolio/fullsize/Fr1.jpg" alt="France1" style="width:100%;">
+        <img src="img/portfolio/fullsize/fr/c1.jpg" alt="carrouselPays1" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="img/portfolio/fullsize/Fr2.jpg" alt="France2" style="width:100%;">
+        <img src="img/portfolio/fullsize/fr/c2.jpg" alt="carrouselPays2" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="img/portfolio/fullsize/Fr3.jpg" alt="France3" style="width:100%;">
+        <img src="img/portfolio/fullsize/fr/c3.jpg" alt="carrouselPays3" style="width:100%;">
       </div>
     </div>
 
@@ -105,12 +105,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Infos France</h2>
+                    <h2 class="section-heading">Infos Pays</h2>
                     <hr class="light">
 					  <div class="row">
-						<div class="col-md-4"><h4>Numéros d'urgence : 112 <span class="glyphicon glyphicon-phone"></h4></div>
-						<div class="col-md-4"><h4>Monnaie :  Euro <span class="glyphicon glyphicon-euro"></h4></div>
-						<div class="col-md-4"><h4>Fuseau horaire :  GMT +1 <span class="glyphicon glyphicon-time"></span></h4></div>
+						<div class="col-md-4"><h4>Numéro d'urgence <i class="fa fa-phone" aria-hidden="true"></i> : 112 </h4></div>
+						<div class="col-md-4"><h4>Monnaie <i class="fa fa-money" aria-hidden="true"></i> : Euro </h4></div>
+						<div class="col-md-4"><h4>Fuseau horaire <span class="glyphicon glyphicon-time"> : GMT +1</span></h4></div>
 					  </div>
 					
 					
@@ -120,23 +120,78 @@
     </section>
 
 
+   <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
 
+                <div class="col-lg-3 col-sm-3">
+                     <img src="img/portfolio/fullsize/fr/1.jpg" class="img-responsive" alt="">
+                </div>
+				 <div class="col-lg-3 col-sm-3">
+                     <img src="img/portfolio/fullsize/fr/2.jpg" class="img-responsive" alt="">
+                </div>
+				 <div class="col-lg-3 col-sm-3">
+                     <img src="img/portfolio/fullsize/fr/3.jpg" class="img-responsive" alt="">
+                </div>
+				 <div class="col-lg-3 col-sm-3">
+                     <img src="img/portfolio/fullsize/fr/4.jpg" class="img-responsive" alt="">
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
 
 
 <div class = "valise">
-<h2>Ce dont vous avez besoin: </h2>
+<h3>Ce dont vous avez besoin: </h3>
+  <div class="row">
+		<div class="col-md-2">
+		<h4>Documents</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Carte d'identité</label>
+			</div>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Passeport</label>
+			</div>
+		</div>
+		<div class="col-md-2">
+		<h4>Médecine</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Trousse de secours</label>
+			</div>
 
-	<ol class="">
-<div class="checkbox">
-  <label><input type="checkbox" value="">Carte d'identité</label>
-</div>
-<div class="checkbox">
-  <label><input type="checkbox" value="">${table_documents}</label>
-</div>
-
+		</div>
+		<div class="col-md-2">
+		<h4>Hygiène</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Trousse de toilette</label>
+			</div>
+		</div>
+				<div class="col-md-2">
+		<h4>Multimédia</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Portable</label>
+			</div>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Chargeurs</label>
+			</div>
+		</div>	
+		<div class="col-md-2">
+		<h4>Loisirs</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">Jeu de cartes</label>
+			</div>
+		</div>	
+		<div class="col-md-2">
+		<h4>Autres</h4>
+			<div class="checkbox">
+				 <label><input type="checkbox" value="">?</label>
+			</div>
+		</div>			
+	</div>
 </div>	
-	
-	
+
+<hr class="primary">
 	<footer>
         <div class="container"> 
 			<div class="row">
@@ -144,8 +199,8 @@
 				</div>
 				<div class="col-sm-3">
 				<h4>Les Explorateurs (2017) </h4>
-				<p><span class="glyphicon glyphicon-earphone"></span> 06.99.99.99.99 </p>
-				<p><span class="glyphicon glyphicon-envelope"></span> les_explorateurs@gmail.com </p>
+				<p><i class="fa fa-phone-square" aria-hidden="true"></i> 06.99.99.99.99 </p>
+				<p><i class="fa fa-envelope" aria-hidden="true"></i> les_explorateurs@gmail.com </p>
 				<i class="fa fa-facebook-official" aria-hidden="true"> </i> <i class="fa fa-linkedin-square" aria-hidden="true"> </i> 
 				<i class="fa fa-twitter" aria-hidden="true"> </i> <i class="fa fa-slack" aria-hidden="true"> </i> <i class="fa fa-pied-piper" aria-hidden="true"> </i>		
 			</div>
