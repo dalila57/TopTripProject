@@ -414,3 +414,20 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+footer {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+footer h4 {
+	line-height: 200%;
+}
+
+
+footer p{
+	text-align: left;
+	font-size: 80%;
+	line-height: 0.8;
+
+}

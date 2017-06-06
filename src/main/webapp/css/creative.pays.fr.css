@@ -15,7 +15,7 @@ body {
 hr {
   border-color: #87D3F8;
   border-width: 3px;
-  max-width: 50px;
+  max-width: 230px;
 }
 hr.light {
   border-color: white;
@@ -46,6 +46,8 @@ p {
 }
 .bg-primary {
   background-color: #87D3F8;
+  max-height: 200px;
+  padding-top: 50px;
 }
 .bg-dark {
   background-color: #222222;
@@ -422,3 +424,21 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+footer {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+footer h4 {
+	line-height: 200%;
+}
+
+
+footer p{
+	text-align: left;
+	font-size: 80%;
+	line-height: 0.8;
+
+}
+
